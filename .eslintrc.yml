@@ -1,0 +1,31 @@
+env:
+  browser: false
+  es6: true
+  mocha: false
+  node: true
+
+rules:
+  # Common style
+  no-unused-vars: 1
+  curly: [2, "multi-line"]
+  no-use-before-define: [2, "nofunc"]
+  quotes: [2, "single"]
+
+  # situation: express.Router() (in express.js)
+  new-cap: 0
+
+  # situation: expect(foo).to.be.true (in chai.js)
+  no-unused-expressions: 0
+
+  # situation: no comma style, refer to ASI
+  semi: [2, "never"]
+  semi-spacing:
+    - 2
+    - before: false
+      after: true
+
+  # trailing comma when multi array or object
+  comma-dangle: 0
+
+  # override when use babel-eslint
+  no-undef: 2
