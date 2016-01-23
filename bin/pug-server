@@ -1,0 +1,10 @@
+#!/usr/bin/env node
+
+var program = require('commander')
+var pugServer = require('../lib/pug-server')
+
+program
+  .usage('<path>')
+  .parse(process.argv)
+
+pugServer(program.args[0] || '.')
