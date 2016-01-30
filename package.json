@@ -1,6 +1,6 @@
 {
   "name": "pug-server",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "A simple zero-configuration command-line http server of pugjs (aka jade)",
   "main": "./lib/pug-server",
   "repository": {
